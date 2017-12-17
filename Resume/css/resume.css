@@ -1,0 +1,37 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 50px;
+    width: 1024px; 
+}
+
+.gray {
+    color: rgb(0, 128, 117)
+}
+
+.text {
+top: 1px; 
+left: 1px;
+width: 40%;
+padding-right: 40px; 
+margin: 0; 
+}
+
+.photo {
+    position: absolute;
+    top: 50px;
+    left: 700px;
+}
+
+.description {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.topic {
+    text-align: left;
+    background-color: #c5bcc1;
+}
+.subtopic {
+    font-size: 16p;
+    color: #454545;
+}
