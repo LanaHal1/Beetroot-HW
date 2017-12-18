@@ -1,0 +1,85 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3399cc;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+.frame {
+    border: 17px solid #2b81ac;
+    height: 672px;
+}
+.position {
+    margin: auto;
+    width: 690px;
+}
+.title {
+    margin: 26px 0 26px 0;
+    font-size: 27px;
+}
+.mainblock {
+    width: 690px;
+    height: 437px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #ffffff;
+}
+.mainblock div {
+    border: 2px solid #ffffff; 
+    float: left;
+}
+.fullblock {
+    width: 100%;
+    height: 25%;
+}
+.mediumblock {
+    width: 50%;
+    height: 25%;
+}
+.smallblock {
+    width: 25%;
+    height: 25%; 
+}
+
+#blue {
+    background-color: #3399cc;
+}
+#cyan {
+    background-color: #33cccc;
+}
+#violet {
+    background-color: #996699;
+}
+#red {
+    background-color: #c24747;
+}
+#orange {
+    background-color: #e2674a;
+}
+#yellow {
+    background-color: #ffcc66;
+}
+#salad {
+    background-color: #99cc99;
+}
+#gray {
+    background-color: #669999;
+}
+#pink {
+    background-color: #cc6699;
+}
+#green {
+    background-color: #339966;
+}
+#lavand {
+    background-color: #666699;
+}
+.bottomtext {
+    font-size:17px; 
+    margin: 26px 0 100px 0;  
+}
