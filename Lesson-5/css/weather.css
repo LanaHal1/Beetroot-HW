@@ -3,6 +3,7 @@
 *:after {
     box-sizing: border-box;
 }
+// @TODO: нет ховер эффектов
 
 body {
     background-color: #3399cc;
@@ -46,6 +47,7 @@ body {
     height: 25%; 
 }
 
+// @TODO: по айди никто не стилит, это должен быть класс
 #blue {
     background-color: #3399cc;
 }
