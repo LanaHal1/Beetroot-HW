@@ -1,0 +1,93 @@
+/* параметры для всего тела страницы */
+body {
+	background: #3b3f45;
+	margin: 0; 
+	font-family: Arial, Helvetica, sans-serif;
+} 
+/* параметры для верхней панели в теле страницы */
+.toppanel {
+	width: 100%;
+	height: 118px;
+	background: #575c63;
+	text-align: center;
+}
+/* параметры текста в верхней панели */
+h1 {
+	font-size: 26px; 
+	color: #e97f81;
+	padding-top:29px;
+	position: relative;
+	margin-bottom: 17px;
+}
+
+.subtitle { 
+	font-size: 23px;
+	color: #e97f81;
+	margin: 0;
+	padding-bottom: 27px;
+}
+/* блок меню */
+.menu {
+	color: white;
+	margin-top: 40px; 
+	margin-left:auto;
+	margin-right:auto;
+	width: 800px;
+}
+label {
+	cursor: pointer; 
+}
+
+.menu p {
+	height: 63px;
+	border:  2px solid transparent;
+	margin: 0px;
+	background-color: #88849d;
+	font-size: 20px;
+}
+.menu p:nth-child(even) {
+	background-color: #7a7692;
+}
+.menu p:hover {
+	background: #625e76;
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+	margin: 0;
+}
+
+input[type="checkbox"] {
+	height: 26px;
+	width: 26px;
+	margin: 18;
+}
+
+input:checked ~ label {
+	text-decoration: line-through;
+}
+.smaltext {
+	font-size: 13px;
+}
+
+button {
+	margin-top: 40px;
+	margin-bottom: 63;
+	border: 0;
+	width: 100%;
+	height: 73px;
+	background-color: #4a4f56; 
+	color:#bbe965;
+	font-size: 19px;
+	cursor: pointer;
+	transition: .4s;
+	padding: 0;
+}
+button:hover {
+	background: #88849d;
+	padding: 0;
+	border:0;
+}
+button:active {
+	background-image: url(http://murkote.com/wp-content/uploads/2015/06/canadian_sphynx_kitten.jpg.pagespeed.ce.fgw1o4OMu4.jpg);
+	padding: 0;
+	border:0;
+}
