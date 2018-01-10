@@ -12,7 +12,7 @@ body {
 }
 .frame {
     border: 17px solid #2b81ac;
-    height: 672px;
+    height: 100%;
 }
 .position {
     margin: auto;
@@ -28,6 +28,9 @@ body {
     margin: auto;
     text-align: center;
     border: 2px solid #ffffff;
+}
+.mainblock:hover {
+    opacity: 0.3;
 }
 .mainblock div {
     border: 2px solid #ffffff; 
