@@ -1,0 +1,93 @@
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+.wrapper {
+  max-width: 850px;
+  width: 100%;
+  min-height: 535px;
+  height: 100%;
+  padding-top: 60px;
+  margin: auto;
+}
+.search {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 60px;
+}
+input:focus {
+  border-color: #ec5a62;
+}
+.input {
+  display: block;
+  width: 750px;
+  height: 100%;
+  background-color: #f1f1f1;
+  font: bold 63px Arial;
+  color: #ec5a62;
+}
+.input::-webkit-input-placeholder {
+  color: #c2c2c2;
+}
+.btn-search {
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url("../img-master/favicon.png");
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.columns-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  color: #c2c2c2;
+  width: 25%;
+}
+.blockTitle {
+  font: bold 16px Arial;
+  font-stretch: ultra-expanded;
+  margin-bottom: 20px;
+}
+.items {
+  width: 246px;
+  height: 60px;
+  background-color: rgba(118,117,128,0.05);
+  margin-bottom: 2px;
+  border-radius: 2px;
+}
+img {
+  width: 50px;
+  height: 50px;
+  margin: 5px 15px;
+}
+.items a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.peopleItem a > img {
+  border-radius: 50%;
+}
+.nameItem {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #bababc;
+}
+a:hover {
+  color: #ec5a62;
+  transition: all .3s ease-in-out;
+}
