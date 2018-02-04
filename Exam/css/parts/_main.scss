@@ -1,0 +1,31 @@
+// RESET
+@import "./base/_reset.scss";
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import "./pe-icon-7-stroke.css";
+@import "./helper.css";
+@import "./font-awesome.css";
+@font-face {
+  font-family: 'Aleo-Regular';
+  src: url("../fonts/aleo-regular-webfont.eot");
+  src: url("../fonts/aleo-regular-webfont.svg");
+  src: url("../fonts/aleo-regular-webfont.ttf");
+  src: url("../fonts/aleo-regular-webfont.woff");
+  src: url("../fonts/aleo-regular-webfont.woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+// BASE
+@import "./base/_colors.scss";
+@import "./base/_mixins.scss";
+@import "./base/_base.scss";
+
+// SECTIONS
+@import "./sections/_header.scss";
+@import "./sections/_chose-us.scss";
+@import "./sections/_gallery.scss";
+@import "./sections/_testimonial.scss";
+@import "./sections/_footer.scss";

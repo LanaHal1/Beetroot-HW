@@ -1,0 +1,119 @@
+.header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(../../img/top-bg.png);
+	height: 740px;
+	font-family: 'Josefin Sans', sans-serif;
+	&__title {
+		text-align: center;
+		font-weight: bold;
+		font-size: 48px;
+		color: $white;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	&__subtitle {
+		text-align: center;
+		font-size: 22px;
+		color: $white;
+		margin-bottom: 50px;
+	}
+	&__search {
+		position: relative;
+		max-width: 655px;
+		height: 65px;
+		background-color: $white;
+		margin-bottom: 118px;
+		input {
+			width: 500px;
+			height: 100%;
+			padding: 0 10px;
+			padding-right: 150px;
+			&::-webkit-input-placeholder {
+				font-size: 14px;
+				font-family: 'Josefin Sans', sans-serif;
+				letter-spacing: 0.2em;
+				text-align: center;
+			}
+			&:focus {
+				border: 1px solid $blue;
+			}
+		}
+	}
+	&__btn-search {
+		position: absolute;
+		right: 1px;
+		bottom: 1px;
+		width: 145px;
+		height: 63px;
+		background-color: $blue;
+		font-family: 'Aleo-Regular', sans-serif;
+		@include text ();
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 20px;
+		&:hover {
+			background: darken($blue, 10%);
+		}
+	}
+	.pe-7s-search:before {
+		content: "\e618";
+		font-size: 24px;
+		color: $white;
+	}
+	&__scroll-bar {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		color: $white;
+	}
+	&__name-btn {
+		font: normal 14px 'Josefin Sans', sans-serif;
+		letter-spacing: 0.2em;
+		padding-bottom: 14px;
+	}
+	.fa-angle-down:before {
+		content: "\f107";
+		font-size: 14px;
+		color: $white;
+	}
+}
+
+.nav-bar {
+	background-color: $blue;
+		&:hover {
+			color: $black;
+			cursor: pointer;
+		}
+	&__wrapper {
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		padding: 0;
+		font-weight: bold;
+		font-size: 24px;
+		a {
+			color: $white;
+			text-transform: uppercase;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+	}
+	&__nav {
+		max-width: 540px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		a {
+			color: $white;
+			text-transform: uppercase;
+			font-family: 'Aleo-Regular', sans-serif;
+		}
+	}
+}
+

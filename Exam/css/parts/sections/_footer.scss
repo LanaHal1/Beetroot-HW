@@ -1,0 +1,40 @@
+.footer {
+  height: 100%;
+  background-color: #232323;
+  &__wrapper {
+    max-width: 175px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 120px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $white;
+  }
+  &__title {
+		text-align: center;
+		font-weight: bold;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	&__subtitle {
+		text-align: center;
+		font-size: 16px;
+		margin-bottom: 30px;
+  }
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 52px;
+    a {
+      font-size: 17px;
+      color: $white;
+      &:nth-of-type(3n) {
+        color: $blue;
+      }
+    }
+  }
+}

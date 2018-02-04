@@ -1,0 +1,75 @@
+.testimonial {
+  height: 730px;
+  background-image: url(../../img/bottom-bg.png);
+  &__wrapper {
+    display: flex;
+		justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1140px;
+    width: 100%;
+    font-family: 'Aleo-Regular', sans-serif;
+    color: $white;
+  }
+  &__header {
+    font-size: 36px;
+    padding-bottom: 100px;
+  }
+  &__slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__photo {
+    width: 40%;
+    object-fit: cover;
+    img {
+      height: 100%;
+      width: 100%
+    }
+  }
+  &__description {
+    width: 60%;
+    background-color: #333333;
+    padding: 50px;
+  }
+  &__username {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+  }
+  &__feedback {
+    font-size: 14px;
+    text-indent: 20px;
+  }
+  .fa-quote-left:before {
+    content: "\f10d";
+    font-size: 20px;
+    color: #5474fd;
+  }
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  &__button {
+    cursor: pointer;
+    width: 82px;
+    height: 100%;
+    border: solid 1px $white;
+    &:hover {
+      background: darken($blue, 10%);
+    }
+  }
+  .fa-chevron-left:before,
+  .fa-chevron-right:before {
+    font-size: 20px;
+    color: $white;
+  }
+}
