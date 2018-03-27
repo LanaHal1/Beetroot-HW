@@ -1,3 +1,31 @@
+.button {
+  &__page-up {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #19bd9a;
+  color: #333b46;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+    &:hover {
+      background-color: #333b46;
+      color: #19bd9a;
+    }
+    &:focus {
+      outline: none;
+    }
+    &.is-visible {
+      opacity: 1;
+      pointer-events: auto; }
+  }
+}
+
 .contacts {
   background-color: #fff;
   &__wrapper {
@@ -8,6 +36,8 @@
     align-items: center;
   }
   &__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     padding-top: 80px;
     font-size: 20px;
     text-transform: uppercase;
@@ -31,10 +61,11 @@
     padding-bottom: 70px;
   }
   &__logo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
     font-size: 20px;
-    color: #000000;
-    font-weight: bolder;
     text-transform: uppercase;
+    color: #000000;
     margin-bottom: 25px;
   }
   &__copyright {

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:300,900");
 *,
 *:before,
 *:after {
@@ -19,21 +18,11 @@ button {
   outline: none;
   cursor: pointer; }
 
-@font-face {
-  font-family: 'Aleo-Regular';
-  src: url("../fonts/aleo-regular-webfont.eot");
-  src: url("../fonts/aleo-regular-webfont.svg");
-  src: url("../fonts/aleo-regular-webfont.ttf");
-  src: url("../fonts/aleo-regular-webfont.woff");
-  src: url("../fonts/aleo-regular-webfont.woff2");
-  font-style: normal;
-  font-weight: normal; }
-
 body {
   font-size: 16px;
   background: #f3f3f3;
   overflow-x: hidden;
-  font-family: 'Aleo-Regular', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 .wrapper {
   max-width: 1400px;
@@ -42,42 +31,53 @@ body {
 
 .header {
   width: 100%;
-  max-height: 740px;
+  height: 740px;
   background: url("./../img/background.png") 0 0 no-repeat;
   background-size: cover;
   color: #f3f3f3; }
+  @media (max-width: 414px) {
+    .header {
+      height: 600px; } }
   .header__wrapper {
     height: 100%;
     max-width: 1170px;
     width: 100%; }
   .header__nav-bar {
     width: 100%;
+    max-height: 70px;
     padding-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .header__logo {
-    height: 35px; }
-  .header__nav {
-    width: 50%;
-    margin-bottom: 200px; }
+    justify-content: space-between;
+    margin-bottom: 200px;
+    font-family: 'Open Sans', sans-serif; }
     @media (max-width: 414px) {
-      .header__nav {
+      .header__nav-bar {
         margin-bottom: 50px; } }
-    @media (max-width: 1366px) {
-      .header__nav {
-        margin-bottom: 90px; } }
+  .header__logo {
+    height: 20px; }
+  .header__nav {
+    max-width: 370px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
     .header__nav a {
       color: #f3f3f3;
       font-size: 20px;
       font-family: 'Aleo-Regular', sans-serif;
-      margin: 10px 30px;
-      border: solid transparent 1px;
+      width: 90px;
+      height: 33px;
+      border: 1px solid transparent;
       border-radius: 25px;
-      padding: 10px;
+      text-align: center;
+      line-height: 31px;
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
@@ -92,7 +92,7 @@ body {
   .header__text {
     margin: auto;
     max-width: 630px;
-    height: 60%;
+    height: 470px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -105,6 +105,8 @@ body {
     flex-direction: column;
     text-align: center; }
   .header__subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -124,10 +126,7 @@ body {
     color: #f3f3f3;
     margin: auto;
     margin-bottom: 20px;
-    margin-top: 10px; }
-    .header__btn:before {
-      content: "";
-      width: 11px; }
+    font-size: 10px; }
     .header__btn:hover {
       background-color: #ffff;
       color: #19bd9a; }
@@ -145,6 +144,7 @@ body {
   .portfolio__info {
     margin: 0 auto;
     max-width: 570px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -159,6 +159,8 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
   .portfolio__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     padding-top: 85px;
     font-size: 20px;
     text-transform: uppercase;
@@ -241,6 +243,8 @@ body {
     padding-top: 30px;
     margin-bottom: 50px; }
   .team__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     padding-top: 80px;
     font-size: 20px;
     text-transform: uppercase;
@@ -423,6 +427,8 @@ body {
   align-items: center; }
 
 .testimonials__title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   padding-top: 80px;
   font-size: 20px;
   text-transform: uppercase;
@@ -544,6 +550,31 @@ body {
   text-transform: uppercase;
   color: #464646; }
 
+.button__page-up {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #19bd9a;
+  color: #333b46;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer; }
+  .button__page-up:hover {
+    background-color: #333b46;
+    color: #19bd9a; }
+  .button__page-up:focus {
+    outline: none; }
+  .button__page-up.is-visible {
+    opacity: 1;
+    pointer-events: auto; }
+
 .contacts {
   background-color: #fff; }
   .contacts__wrapper {
@@ -560,6 +591,8 @@ body {
     -ms-flex-align: center;
     align-items: center; }
   .contacts__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     padding-top: 80px;
     font-size: 20px;
     text-transform: uppercase;
@@ -587,10 +620,11 @@ body {
     margin: 0 auto;
     padding-bottom: 70px; }
   .contacts__logo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
     font-size: 20px;
-    color: #000000;
-    font-weight: bolder;
     text-transform: uppercase;
+    color: #000000;
     margin-bottom: 25px; }
   .contacts__copyright {
     color: #8b9097;

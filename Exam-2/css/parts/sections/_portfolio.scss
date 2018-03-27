@@ -9,12 +9,15 @@
   &__info {
     margin: 0 auto;
     max-width: 570px;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
   &__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     padding-top: 85px;
     font-size: 20px;
     text-transform: uppercase;
