@@ -1,0 +1,66 @@
+.portfolio {
+  color: #333b46;
+  &__wrapper {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &__info {
+    margin: 0 auto;
+    max-width: 570px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    padding-top: 85px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 40px;
+  }
+  &__description {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 14px;
+  }
+  &__nav-btn {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    button {
+      font-size: 20px;
+      color: #333b46;
+      padding-bottom: 15px;
+      &:hover {
+        color: #19bd9a;
+      }
+      &.active {
+        border-bottom: 2px solid #19bd9a;
+      }
+      @media (max-width: 360px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.grid { /* Masonry container */
+  width: 100%;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.grid-item {
+  width: 25%;
+  max-width: 150px;
+  padding: 5px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,29 @@
+// base
+@import "./parts/base/_reset.scss";
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+// @import "./font-awesome.css";
+@font-face {
+  font-family: 'Aleo-Regular';
+  src: url("../fonts/aleo-regular-webfont.eot");
+  src: url("../fonts/aleo-regular-webfont.svg");
+  src: url("../fonts/aleo-regular-webfont.ttf");
+  src: url("../fonts/aleo-regular-webfont.woff");
+  src: url("../fonts/aleo-regular-webfont.woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+// base
+@import "./parts/base/_mixins.scss";
+@import "./parts/base/_base.scss";
+
+// sections
+@import "./parts/sections/_header.scss";
+@import "./parts/sections/_portfolio.scss";
+@import "./parts/sections/_team.scss";
+@import "./parts/sections/_testimonials.scss";
+@import "./parts/sections/_contacts.scss";
+

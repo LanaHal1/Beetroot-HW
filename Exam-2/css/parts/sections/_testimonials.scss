@@ -1,0 +1,122 @@
+.testimonials {
+  &__wrapper {
+    max-height: 650px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    padding-top: 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 40px;
+    color: #333b46;
+  }
+  &__info {
+    max-width: 470px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: #81868e;
+  }
+}
+.slider2__container {
+  max-width: 1200px;
+  width: 100%;
+  height: 320px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-color: #ffff;
+}
+.slider2__item {
+  max-width: 100%;
+  height: 320px;
+  padding: 0 30px; 
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+.slider2 .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.slider2 .slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+}
+.slider2 .slick-dots li {
+  list-style: none;
+  margin: 0 5px;
+}
+.slider2 .slick-dots li.slick-active button {
+  background-color: #19bd9a;
+}
+.slider2 .slick-dots button {
+  font-size: 0;
+  border: 1px solid #19bd9a;
+  background-color: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.slide2__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  padding-top: 45px;
+  margin: 0 auto;
+}
+
+.slide2__img-wrapper {
+  width: 130px;
+  padding: 0 20px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.slide2__text {
+  max-width: 800px;
+  max-height: 140px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.slide2__description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #8b9097;
+  margin-bottom: 35px;
+}
+.slide2__title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #19bd9a;
+}
+.slide2__subtitle {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #464646;
+}
+
