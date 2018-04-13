@@ -1,0 +1,139 @@
+.travel {
+  height: 100vh;
+  position: relative;
+  background: url("./../img/background-3.png") 0 0 no-repeat;
+  background-position: bottom;
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__map-bg {
+    position: absolute;
+    max-width: 1170px;
+    margin-top: 10px;
+    z-index: 1;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      opacity: 0.6;
+      color: $map;
+    }
+  }
+  &__header {
+    @include title();
+    font-size: 30px;
+    color: $dark-grey;
+    margin-bottom: 90px;
+    z-index: 2;
+  }
+  &__cards-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    margin-bottom: 50px;
+  }
+  &__card {
+    max-width: 200px;
+    max-height: 380px;
+    border-radius: 2%;
+    color: $white;
+    margin: 0 17px;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      max-width: 115px;
+      max-height: 270px;
+    }
+  }
+  &__wrap {
+    max-height: 320px;
+    height: 89%;
+    width: 100%;
+    padding: 10px 20px 17px 15px;
+  }
+  &__info {
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include description();
+  }
+  &__rating {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 10px;
+    }
+  }
+  &__location {
+    font-size: 28px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 10px;
+    }
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 11.3%;
+    border-radius: 2%;
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: rgba(193, 202, 215, 0.5);
+  }
+  &__old-price {
+    @include description();
+    font-size: 18px;
+    text-decoration: line-through;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 10px;
+    }
+  }
+  &__new-price {
+    font-size: 26px;
+    @include title();
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+}
+.card--carpatian {
+  background: url("./../img/card-1.png") 0 0 no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.card--alps {
+  background: url("./../img/card-2.png") 0 0 no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.card--pyrenees {
+  background: url("./../img/card-3.png") 0 0 no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.card--rocky {
+  background: url("./../img/card-4.png") 0 0 no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.card--kavkaz {
+  background: url("./../img/card-5.png") 0 0 no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}

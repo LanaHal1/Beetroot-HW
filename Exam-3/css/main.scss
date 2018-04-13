@@ -1,0 +1,21 @@
+@import "./parts/base/_reset.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700|Roboto:400,700');
+
+@import "./parts/base/_colors.scss";
+@import "./parts/base/_components.scss";
+@import "./parts/base/_mixin.scss";
+@import "./parts/base/_base.scss";
+
+@import "./parts/sections/_header.scss";
+@import "./parts/sections/_mains.scss";
+@import "./parts/sections/_about.scss";
+@import "./parts/sections/_journal.scss";
+@import "./parts/sections/_offer.scss";
+@import "./parts/sections/_how-work.scss";
+@import "./parts/sections/_travel.scss";
+@import "./parts/sections/_gallery.scss";
+@import "./parts/sections/_logos.scss";
+@import "./parts/sections/_feedback.scss";
+@import "./parts/sections/_footer.scss"

@@ -1,0 +1,35 @@
+.gallery {
+  height: 100vh;
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__header {
+    @include title();
+    color: $dark-grey;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  &__container {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    width: 200px;
+    height: 230px;
+    margin: .1em;
+    border-radius: 3px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

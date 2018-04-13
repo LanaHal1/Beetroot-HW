@@ -374,6 +374,7 @@ body {
 
 .refer-to-contact {
   background: url("./../img/contact.png") no-repeat;
+  background-size: cover;
   height: 200px;
   color: #f4f4f4;
   width: 100%; }

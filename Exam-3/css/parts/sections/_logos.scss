@@ -1,0 +1,28 @@
+.logos {
+  height: 180px;
+  background-color: $mude-white;
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__svg {
+    content: "";
+    path {
+      fill: $grey;
+    }
+  }
+  &__svg--spotify {
+    width: 34px;
+  }
+  &__svg--adobe,
+  &__svg--google {
+    height: 30px;
+  }
+  &__svg--fb,
+  &__svg--slack,
+  &__svg--nike {
+    width: 85px;
+  }
+}

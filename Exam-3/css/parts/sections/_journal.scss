@@ -1,0 +1,153 @@
+.journal {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+    max-height: 760px;
+  }
+  &__column {
+    max-width: 380px;
+    height: 100%;
+  }
+  &__img {
+    width: 380px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &__info {
+    position: relative;
+    width: 100%;
+    max-height: 380px;
+    padding: 45px 55px 50px 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      max-height: 200px;
+      width: 200px;
+      padding: 10px;
+    }
+  }
+  &__name {
+    @include text-nav();
+    font-size: 11px;
+    color: $blue;
+    margin-bottom: 53px;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 8px;
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    @include title();
+    color: $dark-grey;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  }
+  &__header {
+    @include title();
+    color: $dark-grey;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  }
+  &__description {
+    @include description();
+    font-size: 14px;
+    text-align: justify;
+    color: $grey-text;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+  }
+  &__page {
+    @include description();
+    font-style: italic;
+    font-size: 14px;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 10px;
+    }
+  }
+}
+
+.img--love {
+  background: url("./../img/journal-1.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.img--tree {
+  background: url("./../img/journal-2.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.img--water {
+  background: url("./../img/journal-3.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.icon {
+  max-width: 85px;
+  max-height: 85px;
+  img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+}
+
+.info--love:after {
+  position: absolute;
+  content: '';
+  top: 20%;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: $white;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.info--tree:after {
+  position: absolute;
+  content: '';
+  top: 20%;
+  right: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: $white;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.info--water:after {
+  position: absolute;
+  content: '';
+  left: 20%;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: $white;
+  transform: translateY(-50%) rotate(45deg);
+}
